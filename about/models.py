@@ -4,7 +4,7 @@ from django.db import models
 
 
 
-class About(models.Models):
+class About(models.Model):
     what_we_do= models.TextField(max_length=1000)
     our_mission= models.TextField(max_length=1000)
     our_goals= models.TextField(max_length=1000)
@@ -16,7 +16,7 @@ class About(models.Models):
     
     
     
-class FQA(models.Models):
+class FQA(models.Model):
     title= models.CharField( max_length=250)
     descraption = models.TextField(max_length=1000)
     
